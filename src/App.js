@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import rem_logo from './resources/remlogo_horizontal.png';
+import DonateForm from './components/DonateForm.js'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={rem_logo} className="App-logo" alt="logo" />
       </header>
+      <DonateForm charityName="Name of Charity" charityDescription="Put brief description of charity here."/>
     </div>
   );
 }
