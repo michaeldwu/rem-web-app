@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rem-web-app/static/css/main.562bdbaf.chunk.css",
+    "main.js": "/rem-web-app/static/js/main.80244998.chunk.js",
+    "main.js.map": "/rem-web-app/static/js/main.80244998.chunk.js.map",
+    "runtime-main.js": "/rem-web-app/static/js/runtime-main.2107b80f.js",
+    "runtime-main.js.map": "/rem-web-app/static/js/runtime-main.2107b80f.js.map",
+    "static/js/2.a7a095d0.chunk.js": "/rem-web-app/static/js/2.a7a095d0.chunk.js",
+    "static/js/2.a7a095d0.chunk.js.map": "/rem-web-app/static/js/2.a7a095d0.chunk.js.map",
+    "index.html": "/rem-web-app/index.html",
+    "precache-manifest.e84cc4838d37bc320847268425452cd0.js": "/rem-web-app/precache-manifest.e84cc4838d37bc320847268425452cd0.js",
+    "service-worker.js": "/rem-web-app/service-worker.js",
+    "static/css/main.562bdbaf.chunk.css.map": "/rem-web-app/static/css/main.562bdbaf.chunk.css.map",
+    "static/js/2.a7a095d0.chunk.js.LICENSE.txt": "/rem-web-app/static/js/2.a7a095d0.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/rem-web-app/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2107b80f.js",
+    "static/js/2.a7a095d0.chunk.js",
+    "static/css/main.562bdbaf.chunk.css",
+    "static/js/main.80244998.chunk.js"
+  ]
+}
