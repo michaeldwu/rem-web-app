@@ -1,25 +1,34 @@
 import React from 'react';
 import DonateAmountButton from './DonateAmountButton.js'
 
-const donation_amts = [10, 20, 50, 'Other'];
+const donation_amts = [10, 20, 50];
 
 class DonateForm extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      charityAmount: this.props.charityAmount,
+      charityName: this.props.charityName,
+      charityDescription: this.props.charityDescription
+    }
+    
+  }
+
   
   render(){
-    const{charityName, charityDescription} = this.props;
     return(
       <div>
       <div className="Charity-title-wrapper">
         <div className="Charity-header">
-          {charityName}
+          {this.state.charityName}
         </div>
         <div className="Charity-subheader">
-          {charityDescription}
+          {this.state.charityDescription}
         </div>
         <hr/>
         {donation_amts.map(function(amount, index){
-          return <DonateAmountButton amount={amount} />;
-        })}
+          return <DonateAmountButton amount={amount} filled={this.state.charityAmount == amount} />;
+        }, this)}
       </div>
       </div>
       );

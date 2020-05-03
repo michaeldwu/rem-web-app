@@ -35,6 +35,18 @@
   font-weight: bold;
 }
 
+.Donation-amount-button-filled{
+  border: 2px solid #929495;
+  background-color: #929495;
+  color: white;
+  width: 80px;
+  height: 50px;
+  font-size: 18px;
+  margin: 10px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
 .Charity-header{
   color: #212121;
   font-size: calc(18px + 2vmin);
