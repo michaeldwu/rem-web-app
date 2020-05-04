@@ -3,7 +3,6 @@ import rem_logo from './resources/remlogo_horizontal.png';
 import DonateForm from './components/DonateForm.js'
 import './App.css';
 import {
-  Link,
   useLocation
 } from "react-router-dom";
 

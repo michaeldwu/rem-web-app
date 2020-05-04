@@ -2,10 +2,10 @@ import React from 'react';
 
 class DonateAmountButton extends React.Component {
   render(){
-    const{amount, filled} = this.props;
+    const{onClick, amount, filled} = this.props;
     return(
-      <button className={filled ? 'Donation-amount-button-filled' : 'Donation-amount-button'} >
-      ${amount}
+      <button onClick={onClick} className={filled ? 'Donation-amount-button-filled' : 'Donation-amount-button'} >
+      {amount}
       </button>
       );
     }
