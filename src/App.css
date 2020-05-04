@@ -78,11 +78,28 @@
   margin-left: 10px;
 }
 
-.More-info{
+.Donate-description{
   color: #929495;
   font-size: calc(10px + 0.5vmin);
   font-weight: bold;
   margin-top: 10px
+}
+
+.Info-dialog{
+  color: #929495;
+  font-size: calc(12px + 0.5vmin);
+  margin-top: 10px;
+  white-space: pre-line;
+  padding: 10px
+}
+
+.More-info{
+  color: #929495;
+  font-size: calc(10px + 0.5vmin);
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: underline
 }
 
 label{

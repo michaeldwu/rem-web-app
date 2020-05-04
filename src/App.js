@@ -14,7 +14,7 @@ function useQuery() {
 }
 
 function getDescription(){
-  return "Put breif description of charity here"
+  return "Put brief description of charity here"
 }
 
 function App() {
