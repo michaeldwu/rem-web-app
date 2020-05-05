@@ -66,6 +66,7 @@ class DonateForm extends React.Component {
           {this.state.charityDescription}
         </div>
         <hr/>
+        <div className="Button-box">
         {donation_amts.map(function(amount, index){
           return <DonateAmountButton 
             onClick={Number.isInteger(amount) ? this.handleClick.bind(this, amount, index) : 
@@ -88,6 +89,7 @@ class DonateForm extends React.Component {
             </label> 
            </form>
          }
+         </div>
          <div className="Donate-description">
          More information about the charity being donated to.
          </div>
