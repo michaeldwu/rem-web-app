@@ -73,9 +73,6 @@ class DonateForm extends React.Component {
               this.handleClick.bind(this, null, index)} 
             amount={Number.isInteger(amount) ? "$" + amount : amount} 
             filled={this.state.selected[index]}
-            // filled={Number.isInteger(amount) ? 
-            //   this.state.charityAmount == amount : 
-            //   donation_amts.indexOf(parseInt(this.state.charityAmount)) == -1} 
               />;
         }, this)}
         {!this.state.selected[this.state.selected.length - 1] ? null :
@@ -102,7 +99,7 @@ class DonateForm extends React.Component {
           onClick={null}
           enabled={this.state.charityAmount}
          />
-         {this.state.popupOpen ? <InfoDialog  toggleDialog={this.infoToggle} open={this.state.popupOpen}/> : null}
+         <InfoDialog  toggleDialog={this.infoToggle} open={this.state.popupOpen}/>
       </div>
       );
     }
