@@ -1,16 +1,17 @@
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+
 import AppBar from '@material-ui/core/AppBar';
 import Dialog from '@material-ui/core/Dialog';
-import Button from '@material-ui/core/Button';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import IconButton from '@material-ui/core/IconButton';
 import Slide from '@material-ui/core/Slide';
 import Toolbar from '@material-ui/core/Toolbar';
-
 import CloseIcon from '@material-ui/icons/Close';
 
+import styles from '../styles/classes';
 
 // Transition code source: https://material-ui.com/components/dialogs/
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -20,21 +21,21 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 class InfoDialog extends React.Component {
   render(){
-    const{toggleDialog, open} = this.props;
+    const{classes, toggleDialog, open} = this.props;
     return(
       <div>
-      <Dialog fullScreen  TransitionComponent={Transition} open={open} onClose={toggleDialog} className="Info-dialog">
-        <AppBar className="Info-appbar">
+      <Dialog fullScreen  TransitionComponent={Transition} open={open} onClose={toggleDialog} className={classes.infoDialog}>
+        <AppBar className={classes.infoAppbar}>
           <Toolbar>
             <IconButton edge="start" color="inherit" onClick={toggleDialog} aria-label="close">
               <CloseIcon />
             </IconButton>
             <DialogTitle>
-              FAQ
+              Donation FAQ
             </DialogTitle>
           </Toolbar>
         </AppBar>
-        <div style={{marginTop: '70px'}}>
+        <div >
         <DialogContent >
           <DialogContentText className="Info-dialog">
           <span>
@@ -48,4 +49,4 @@ class InfoDialog extends React.Component {
       );
     }
   }
-export default InfoDialog;
+export default withStyles(styles)(InfoDialog);

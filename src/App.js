@@ -1,5 +1,7 @@
 import React from 'react';
-import rem_logo from './resources/remlogo_horizontal.png';
+
+import blank_image from './resources/blank_image.png';
+
 import DonateForm from './components/DonateForm.js'
 import './App.css';
 import {
@@ -19,13 +21,13 @@ function getDescription(){
 
 function App() {
   let query = useQuery();
-  
-  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={rem_logo} className="App-logo" alt="logo" />
-      </header>
+        <header className="App-header">
+          <div className="Image-container">
+            <img src={blank_image} className="Background-image" alt="bimg" />
+          </div>
+        </header>
       <DonateForm charityName={query.get("name")} charityDescription={getDescription()} charityAmount={query.get("amount")}/>
     </div>
   );

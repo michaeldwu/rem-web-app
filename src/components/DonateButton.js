@@ -1,13 +1,18 @@
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+
+import Button from '@material-ui/core/Button';
+
+import styles from '../styles/classes';
 
 class DonateButton extends React.Component {
   render(){
-    const{onClick, enabled} = this.props;
+    const{classes, onClick, enabled} = this.props;
     return(
-      <button onClick={onClick} className="Donation-button" style={ enabled ? {} : { cursor:'not-allowed', opacity: 0.6}}>
+      <Button onClick={onClick} className={classes.donationButton} style={ enabled ? {} : { cursor:'not-allowed', opacity: 0.6, pointerEvents: 'none'}}>
       DONATE
-      </button>
+      </Button>
       );
     }
   }
-export default DonateButton;
+export default withStyles(styles)(DonateButton);

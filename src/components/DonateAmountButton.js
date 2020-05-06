@@ -1,13 +1,18 @@
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+
+import Button from '@material-ui/core/Button';
+
+import styles from '../styles/classes';
 
 class DonateAmountButton extends React.Component {
   render(){
-    const{onClick, amount, filled} = this.props;
+    const{classes, onClick, amount, filled} = this.props;
     return(
-      <button onClick={onClick} className={filled ? 'Donation-amount-button-filled' : 'Donation-amount-button'} >
+      <Button onClick={onClick} className={filled ? classes.donationAmountButtonFilled : classes.donationAmountButton} >
       {amount}
-      </button>
+      </Button>
       );
     }
   }
-export default DonateAmountButton;
+export default withStyles(styles)(DonateAmountButton);

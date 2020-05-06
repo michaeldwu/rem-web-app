@@ -1,7 +1,11 @@
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+
 import DonateAmountButton from './DonateAmountButton.js';
 import DonateButton from './DonateButton.js';
 import InfoDialog from './InfoDialog.js';
+
+import styles from '../styles/classes';
 
 const donation_amts = [10, 20, 50, 'Other'];
 
@@ -57,16 +61,17 @@ class DonateForm extends React.Component {
   }
   
   render(){
+    const { classes } = this.props;
     return(
       <div>
-        <div className="Charity-header">
+        <div className={classes.charityHeader}>
           {this.state.charityName}
         </div>
-        <div className="Charity-subheader">
+        <div className={classes.charitySubheader}>
           {this.state.charityDescription}
         </div>
         <hr/>
-        <div className="Button-box">
+        <div className={classes.buttonBox}>
         {donation_amts.map(function(amount, index){
           return <DonateAmountButton 
             onClick={Number.isInteger(amount) ? this.handleClick.bind(this, amount, index) : 
@@ -77,31 +82,32 @@ class DonateForm extends React.Component {
         }, this)}
         {!this.state.selected[this.state.selected.length - 1] ? null :
            <form> 
-            <label>
+            <label >
             Amount:   
-            <span className="Currency-box">
+            <span className={classes.currencyBox}>
             $
-            <input value={this.state.charityAmount} onChange={event => this.setState({charityAmount: event.target.value.replace(/\D/,'')})}/>
+            <input className={classes.valueInput} value={this.state.charityAmount} onChange={event => this.setState({charityAmount: event.target.value.replace(/\D/,'')})}/>
             </span>
             </label> 
            </form>
          }
          </div>
-         <div className="Donate-description">
+         <div className={classes.donateDescription}>
          More information about the charity being donated to.
          </div>
-         <a>
-           <div className="More-info" onClick={this.infoToggle}>
-           Information about donations
-           </div>
-         </a>
+         
          <DonateButton
           onClick={null}
           enabled={this.state.charityAmount}
          />
+         <a>
+           <div className={classes.moreInfo} onClick={this.infoToggle}>
+           Information about donations
+           </div>
+         </a>
          <InfoDialog  toggleDialog={this.infoToggle} open={this.state.popupOpen}/>
       </div>
       );
     }
   }
-export default DonateForm;
+export default withStyles(styles)(DonateForm);

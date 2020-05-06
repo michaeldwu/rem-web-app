@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 64px;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #ffffff;
   min-height: 10vh;
@@ -17,97 +12,20 @@
   padding: 10px;
   font-size: 18px;
   color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.Background-image{
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  z-index: 1;
+  top: 0; left: 0
 }
 
-.Button-box{
-  margin-top: 40px;
-}
-
-.Close-dialog{
-  position: 'absolute';
-  color: #929495;
-}
-
-.Donation-button{
-  border: 2px solid #72b268;
-  background-color: #72b268;
-  border-radius: 12px;
-  color: white;
-  width: 200px;
-  height: 50px;
-  font-size: 18px;
-  margin: 10px;
-  font-weight: bold;
-}
-
-.Donation-amount-button{
-  border: 2px solid #929495;
-  background-color: white;
-  color: #929495;
-  width: 80px;
-  height: 50px;
-  font-size: 18px;
-  margin: 10px;
-  font-weight: bold;
-}
-
-.Donation-amount-button-filled{
-  border: 2px solid #929495;
-  background-color: #929495;
-  color: white;
-  width: 80px;
-  height: 50px;
-  font-size: 18px;
-  margin: 10px;
-  font-weight: bold;
-}
-
-.Charity-header{
-  color: #212121;
-  font-size: calc(18px + 2vmin);
-  font-weight: bold
-}
-
-.Charity-subheader{
-  color: #929495;
-  font-size: calc(10px + 1vmin);
-  font-weight: bold;
-  margin-top: 10px
-}
-
-.Currency-box{
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.Donate-description{
-  color: #929495;
-  font-size: calc(10px + 0.5vmin);
-  font-weight: bold;
-  margin-top: 10px
-}
-
-.Info-dialog{
-  color: #929495;
-  font-size: calc(12px + 0.5vmin);
-  white-space: pre-line;
-}
-
-.Info-appbar{
-  position: 'sticky';
-}
-
-.More-info{
-  color: #929495;
-  font-size: calc(10px + 0.5vmin);
-  font-weight: bold;
-  margin-top: 10px;
-  cursor: pointer;
-  text-decoration: underline;
+.Image-container{
+  position: relative;
+  width: 100%
 }
 
 label{
@@ -124,25 +42,6 @@ label{
 form{
   margin: 10px;
   width: 100%
-}
-
-input{
-  width: 140px;
-  height: 30px;
-  outline: none;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  border-bottom-color: #929495;
-  margin-left: 2px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
-  font-size: 18px;
-  color: #929495;
 }
 
 hr{
