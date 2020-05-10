@@ -102,7 +102,7 @@ class DonateForm extends React.Component {
          />
          <a>
            <div className={classes.moreInfo} onClick={this.infoToggle}>
-           Information about donations
+           Click here for donation FAQs.
            </div>
          </a>
          <InfoDialog  toggleDialog={this.infoToggle} open={this.state.popupOpen}/>
