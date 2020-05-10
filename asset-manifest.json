@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/rem-web-app/static/css/main.72fd154b.chunk.css",
-    "main.js": "/rem-web-app/static/js/main.39d2f7db.chunk.js",
-    "main.js.map": "/rem-web-app/static/js/main.39d2f7db.chunk.js.map",
+    "main.css": "/rem-web-app/static/css/main.ff19fce6.chunk.css",
+    "main.js": "/rem-web-app/static/js/main.09a2808a.chunk.js",
+    "main.js.map": "/rem-web-app/static/js/main.09a2808a.chunk.js.map",
     "runtime-main.js": "/rem-web-app/static/js/runtime-main.2107b80f.js",
     "runtime-main.js.map": "/rem-web-app/static/js/runtime-main.2107b80f.js.map",
     "static/js/2.5c17150e.chunk.js": "/rem-web-app/static/js/2.5c17150e.chunk.js",
     "static/js/2.5c17150e.chunk.js.map": "/rem-web-app/static/js/2.5c17150e.chunk.js.map",
     "index.html": "/rem-web-app/index.html",
-    "precache-manifest.f7ffe01a9a9e2b95fd6ded6c56d72852.js": "/rem-web-app/precache-manifest.f7ffe01a9a9e2b95fd6ded6c56d72852.js",
+    "precache-manifest.59e3b9800e45c1f2ae52a71007f54d24.js": "/rem-web-app/precache-manifest.59e3b9800e45c1f2ae52a71007f54d24.js",
     "service-worker.js": "/rem-web-app/service-worker.js",
-    "static/css/main.72fd154b.chunk.css.map": "/rem-web-app/static/css/main.72fd154b.chunk.css.map",
+    "static/css/main.ff19fce6.chunk.css.map": "/rem-web-app/static/css/main.ff19fce6.chunk.css.map",
     "static/js/2.5c17150e.chunk.js.LICENSE.txt": "/rem-web-app/static/js/2.5c17150e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2107b80f.js",
     "static/js/2.5c17150e.chunk.js",
-    "static/css/main.72fd154b.chunk.css",
-    "static/js/main.39d2f7db.chunk.js"
+    "static/css/main.ff19fce6.chunk.css",
+    "static/js/main.09a2808a.chunk.js"
   ]
 }

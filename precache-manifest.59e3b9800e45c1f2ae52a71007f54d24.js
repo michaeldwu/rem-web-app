@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2eb9e29f4d943d97fe77cffc80bcc562",
+    "revision": "81ebaca237d210de80e781b87961d676",
     "url": "/rem-web-app/index.html"
   },
   {
-    "revision": "20173ea35f1edc2bdbc7",
-    "url": "/rem-web-app/static/css/main.72fd154b.chunk.css"
+    "revision": "09d985ff2019fc2f934d",
+    "url": "/rem-web-app/static/css/main.ff19fce6.chunk.css"
   },
   {
     "revision": "399cdb7d9f3154e500ab",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rem-web-app/static/js/2.5c17150e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "20173ea35f1edc2bdbc7",
-    "url": "/rem-web-app/static/js/main.39d2f7db.chunk.js"
+    "revision": "09d985ff2019fc2f934d",
+    "url": "/rem-web-app/static/js/main.09a2808a.chunk.js"
   },
   {
     "revision": "6364e14935cc44ebd7f2",
