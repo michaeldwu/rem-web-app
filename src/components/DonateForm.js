@@ -34,6 +34,7 @@ class DonateForm extends React.Component {
     this.infoToggle = this.infoToggle.bind(this);
   }
   
+  // handle amount button click 
   handleClick(amount, index){
     this.setState(state => ({
       charityAmount: amount
@@ -48,12 +49,14 @@ class DonateForm extends React.Component {
     }
   }
   
+  // handle "other" amount click 
   handleOtherClick(){
     this.setState(state => ({
       charityAmount: null
     }))
   }
 
+  // handle "more info" popup state
   infoToggle(){
     this.setState(state => ({
       popupOpen: !this.state.popupOpen
