@@ -12,7 +12,10 @@ const styles = theme => ({
     width: '100%',
     backgroundFilter: 'blur(1000px)',
     backgroundImage: "url("+bg+")",
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    overflowX: 'scroll'
   },
   main: {
     paddingBottom: '180px',
@@ -78,6 +81,7 @@ function App(props) {
         <div className={classes.social}>
           <SocialIcon bgColor='white' url="https://www.instagram.com/rem.fyc" style={{margin: '30px'}}/>
           <SocialIcon bgColor='white' url="https://www.youtube.com/channel/UCglok9Hll2SF2PsDfqVCkzA" style={{margin: '30px'}} />
+          <SocialIcon bgColor='white' url="mailto:ourteam.rem@gmail.com" style={{margin: '30px'}} />
         </div>
 
         <div className={classes.copyRight}>
