@@ -16,7 +16,7 @@ yarn start
 ```
 index.js: Root 
   |
-  |--App.js: App
+  |--App.js: App HomePage
       |
-      |--DonateForm.js: Donation panel
+      |--Pages/Donate.js: Donation panel
 ```
